@@ -31,7 +31,7 @@ function git_feature_merge
     if [ $status -ne 0 ]
       return 1
     end
-    git push origin $current_branch
+    git push origin $target_branch
     if [ $status -ne 0 ]
       return 1
     end
